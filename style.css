@@ -1,0 +1,118 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+}
+
+header {
+    display: flex;
+    /*position:fixed;*/
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    top: 0;
+    left: 0;
+
+    background-color:darkturquoise;
+    text-align: center;
+    overflow: hidden;
+}
+
+header * {
+    margin: 8px 0 0 0;
+    padding: 0;
+    display: inline-block;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: solid; */
+    font-size: 40px;
+}
+
+h1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    padding: 0px;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+h1 span{
+    border-bottom: double 8px aquamarine;
+    white-space: nowrap;
+    height: auto;
+}
+
+main {
+    width: calc(100% - 64px);
+    padding: 32px;
+}
+
+table {
+    width: calc(100% - 16px);
+    margin: 0 8px;
+
+    border-width: 3px 0px;
+    border-color:lightseagreen;
+    border-spacing: 10px;
+    border-style: solid;
+}
+
+.index {
+
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    font-size: 10px;
+    text-align: center;
+}
+
+.copy {
+    margin: 0;
+    padding: 0;
+
+    color: gray;
+}
+
+a {
+    color: gray;
+}
+
+@media screen and (max-width: 450px) {
+    h1 span{
+        font-size: 20px;
+    }
+}

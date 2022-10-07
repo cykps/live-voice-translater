@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Live Voice Translater</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><span>Live Voice Translater</span></h1>
+    </header>
+
+    <main>
+        <select id="changeLang">
+            <option id="en" selected>To&thinsp;英語</option>
+            <option id="ko">To&thinsp;韓国語</option>
+            <option id="zh-TW">To&thinsp;中国語(繁体字)</option>
+            <option id="zh-CN">To&thinsp;中国語(簡体字)</option>
+            <option id="uk">To&thinsp;ウクライナ語</option>
+            <option id="ru">To&thinsp;ロシア語</option>
+            <option id="de">To&thinsp;ドイツ語</option>
+        </select>
+        <table>
+            <tr><td class="index"><span>入力中(日本語):</span></td><td><span id="tmp"></span></td></tr>
+            <tr><td class="index"><span>入力中(外国語):</span></td><td><span id="tmpT"></span></td></tr>
+            <tr><td class="index"><span>入力確定(日本語):</span></td><td><span id="result"></span></td></tr>
+            <tr><td class="index"><span>入力確定(外国語):</span></td><td><span id="resultT"></span></td></tr>
+        </table>
+
+        <select id="changeLang2">
+            <option id="en">To&thinsp;英語</option>
+            <option id="ko" selected>To&thinsp;韓国語</option>
+            <option id="zh-TW">To&thinsp;中国語(繁体字)</option>
+            <option id="zh-CN">To&thinsp;中国語(簡体字)</option>
+            <option id="uk">To&thinsp;ウクライナ語</option>
+            <option id="ru">To&thinsp;ロシア語</option>
+            <option id="de">To&thinsp;ドイツ語</option>
+        </select>
+        <table>
+            <tr><td class="index"><span>入力中(日本語):</span></td><td><span id="tmp2"></span></td></tr>
+            <tr><td class="index"><span>入力中(外国語):</span></td><td><span id="tmpT2"></span></td></tr>
+            <tr><td class="index"><span>入力確定(日本語):</span></td><td><span id="result2"></span></td></tr>
+            <tr><td class="index"><span>入力確定(外国語):</span></td><td><span id="resultT2"></span></td></tr>
+        </table>
+    </main>
+
+    <footer>
+        <p class="copy" target="_blank" rel="noopener noreferrer">翻訳機能 - Powered by <a
+                href="https://mt-auto-minhon-mlt.ucri.jgn-x.jp">NICT</a></p>
+        <p class="copy" target="_blank" rel="noopener noreferrer">&copy; 2022 <a
+                href="https://github.com/cykps">Conayuki</a></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/oauth-1.0a@2.2.6/oauth-1.0a.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
